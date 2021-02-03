@@ -10,61 +10,66 @@
   </head>
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form onsubmit="onSubmit()"
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    autocomplete="disabled"
+    <form
+      onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      autocomplete="disabled"
     >
       <fieldset>
         <legend>Personal information</legend>
         <label for="sname">Surname:</label>
         <input
-        type="text"
-        id="sname"
-        autocomplete="disabled"
-        required
+          type="text"
+          id="sname"
+          autocomplete="disabled"
+          required
         >
         <br>
         <label for="name">Name:</label>
         <input
-        type="text"
-        id="name"
-        autocomplete="disabled"
+          type="text"
+          id="name"
+          autocomplete="disabled"
         >
         <br>
         <label for="old">How old are You?</label>
         <input
-        type="number"
-        id="old"
-        value="12"
-        min="1"
-        max="100"
+          type="number"
+          id="old"
+          value="12"
+          min="1"
+          max="100"
         >
         <br>
         <label for="birth">Full date of birth:</label>
-        <input type="date" id="birth" ><br>
+        <input
+          type="date"
+          id="birth"
+        >
+        <br>
         <label for="accept">I accept the term of the agreement</label>
         <input
-        type="checkbox"
-        id="accept"
+          type="checkbox"
+          id="accept"
         >
       </fieldset>
       <fieldset>
         <legend>Registration</legend>
         <label for="mail">E-mail:</label>
         <input
-        type="email"
-        id="mail"
-        placeholder="email@example.com"
-        autocomplete="disabled"
+          type="email"
+          id="mail"
+          placeholder="email@example.com"
+          autocomplete="disabled"
         >
         <br>
         <label for="password">Password:</label>
         <input
-        type="password"
-        id="password"
-        autocomplete="disabled"
-        minlength="8"
-        maxlength="16"
+          type="password"
+          id="password"
+          autocomplete="disabled"
+          minlength="8"
+          maxlength="16"
         >
         <br>
       </fieldset>
@@ -72,22 +77,30 @@
         <legend>An interesting fact about you!</legend>
         <label for="love">Do you love cats?</label>
         <input
-        type="radio"
-        name="yes"
-        id="love"
+          type="radio"
+          name="yes"
+          id="love"
         >
           Yes
         <input
-        type="radio"
-        name="no"
-        id="love1"
+          type="radio"
+          name="no"
+          id="love1"
         >
           No
         <br>
         <label for="color">What is your favorite color?</label>
-        <input type="color" id="color" ><br>
+        <input
+          type="color"
+          id="color"
+        >
+        <br>
         <label for="time">What time do you go to bed?</label>
-        <input type="time" id="time"><br>
+        <input
+          type="time"
+          id="time"
+        >
+        <br>
         <label for="car">What are your favorite brand of cars?</label>
         <select id="car" multiple>
           <option>BMW</option>
@@ -96,12 +109,19 @@
         </select>
         <br>
         <label for="rate">How do you rate our work?</label>
-        <input type="range" id="rate" >
+        <input
+          type="range"
+          id="rate"
+        >
       </fieldset>
       <fieldset>
         <legend>Additional info:</legend>
         <label for="comment">Comments:</label>
-        <textarea id="comment" autocomplete="disabled"></textarea>
+        <textarea
+          id="comment"
+          autocomplete="disabled"
+        >
+        </textarea>
         <br>
         <label for="reccomend">Would you recommend us?</label>
         <select id="reccomend">
@@ -109,7 +129,10 @@
           <option>no</option>
         </select>
       </fieldset>
-      <input type="submit" value="Submit">
+      <input
+        type="submit"
+        value="Submit"
+      >
     </form>
   </body>
 </html>
